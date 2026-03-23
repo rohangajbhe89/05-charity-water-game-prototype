@@ -23,6 +23,10 @@
           <span id="score">0</span>
         </div>
         <div class="stat">
+          <span class="label">Goal</span>
+          <span id="goal">100</span>
+        </div>
+        <div class="stat">
           <span class="label">Time</span>
           <span id="timer">30</span>
         </div>
@@ -34,6 +38,12 @@
         Tap the yellow cans to collect clean water. Avoid broken pipes or you lose points.
       </p>
       <div class="actions">
+        <label for="difficultySelect">Difficulty:</label>
+        <select id="difficultySelect">
+          <option value="easy">Easy</option>
+          <option value="normal" selected>Normal</option>
+          <option value="hard">Hard</option>
+        </select>
         <button id="startBtn">Start Game</button>
         <button id="resetBtn">Reset</button>
       </div>
@@ -43,9 +53,9 @@
       <aside class="instructions">
         <h2>How to Play</h2>
         <ul>
-          <li>Tap yellow cans = +10 points</li>
-          <li>Tap broken pipes = -5 points</li>
-          <li>Reach 100+ points before time runs out</li>
+          <li id="ruleCan">Tap yellow cans = +10 points</li>
+          <li id="rulePipe">Tap broken pipes = -5 points</li>
+          <li id="ruleGoal">Reach 100+ points before time runs out</li>
         </ul>
 
         <div class="progress-card">
@@ -58,6 +68,7 @@
 
       <section class="game-panel">
         <div id="feedback" class="feedback">Press Start to play</div>
+        <div id="milestoneText" class="milestone hidden">Milestone reached!</div>
 
         <div id="grid" class="grid">
           <button class="cell" data-index="0"></button>
@@ -80,6 +91,12 @@
     </section>
 
     <div id="confettiContainer" class="confetti-container"></div>
+
+    <footer class="site-footer">
+      <p>Learn more and help fund clean water projects:</p>
+      <a href="https://www.charitywater.org/" target="_blank" rel="noopener noreferrer">charity: water website</a>
+      <a href="https://www.charitywater.org/donate" target="_blank" rel="noopener noreferrer">Donate to charity: water</a>
+    </footer>
   </main>
 
   <script src="script.js"></script>

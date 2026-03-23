@@ -114,6 +114,20 @@ h1 {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.actions label {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+#difficultySelect {
+  border: 2px solid #cfd9e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  background: var(--white);
 }
 
 button {
@@ -188,6 +202,16 @@ button {
   color: var(--blue);
 }
 
+.milestone {
+  margin-bottom: 14px;
+  background: #e8f5ff;
+  color: var(--blue);
+  border-left: 5px solid var(--light-blue);
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(80px, 1fr));
@@ -243,6 +267,29 @@ button {
   position: fixed;
   inset: 0;
   overflow: hidden;
+}
+
+.site-footer {
+  margin-top: 20px;
+  padding: 16px;
+  background: var(--white);
+  border: 2px solid #d9e2ea;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.site-footer p {
+  margin: 0;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.site-footer a {
+  color: var(--blue);
+  font-weight: bold;
 }
 
 .confetti {
